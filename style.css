@@ -1,0 +1,249 @@
+..{
+    box-sizing:border-box;
+}
+
+body{
+background-color:#ddd ;
+  text-align:center;
+    
+}
+/* wrapper */
+#wrapper{
+    background-color:grey;
+}
+
+/* page */
+.page{
+    box-shadow:30px solid #000000;
+    height:auto;
+    min-height:100vh; 
+    background-color:#ffffff;
+    padding:60px 10px;
+    
+}
+
+#navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    height: 30px;
+    text-align:center;
+    background-color:green;
+    width: 100%;
+    z-index:10;
+}
+#navbar nav{
+    display:flex;
+}
+#navbar nav a{
+    flex:0 0 25vw;
+    text-align:center;
+    tect-decoration:none;
+    height:60px;
+    color: white;
+    font-size:1em;
+    line-height:2em;
+    cursor:pointer;
+}
+#navbar nav a:hover{
+background-color:purple;
+height: 30px;
+color:green;
+}
+
+h2{
+    color:green;
+}
+#animation{
+    background-img:ntaja.jpg;
+}
+
+img{
+    border:none;
+    box-shadow:0 4px 4px 0 black;
+    
+    padding:5px;
+    width:100%;
+  
+}
+#button1{
+    color:Red;
+}
+
+.jumbtron{
+    width:80%;
+    margin:auto;
+    border:5px solid white;
+    text-align:center;
+    padding:20px;
+    backbackground-image:;
+}
+
+
+/* col */
+
+.col{
+    flex:1;
+    float:left;
+    width:30%;
+    border:none;
+    
+    padding:5px;
+    min-height:35vh;
+}
+
+.main{
+    background-color:grey;
+    min-height:5vh;
+    padding:10px;
+    font-size:2em;
+}
+/* card */
+
+.card{
+    flex:0 0 20%;
+    float:left;
+    background-color:#eee;
+    border-radius:20px;
+    border:1px solid white;
+    padding:10px;
+}
+
+
+card img{
+    max-width:30%;
+    height:30%;
+   } 
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+   justify-content:space-around;
+}
+  .menu {
+            width:35px;
+            height:5px;
+            background-color:green;
+            margin:6px 0;
+            
+        }
+        
+        
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap'); 
+  
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    border: none; 
+    outline: none; 
+    font-family: 'Poppins', sans-serif; 
+    text-transform: capitalize; 
+    transition: all 0.2s linear; 
+} 
+  
+.container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 25px; 
+    background: #d6eef1; 
+} 
+  
+.container form { 
+    width: 700px; 
+    padding: 20px; 
+    background: #fff; 
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); 
+} 
+  
+.container form .row { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+} 
+  
+.container form .row .col { 
+    flex: 1 1 250px; 
+} 
+  
+.col .title { 
+    font-size: 20px; 
+    color: rgb(237, 55, 23); 
+    padding-bottom: 5px; 
+} 
+  
+.col .inputBox { 
+    margin: 15px 0; 
+} 
+  
+.col .inputBox label { 
+    margin-bottom: 10px; 
+    display: block; 
+} 
+  
+.col .inputBox input, 
+.col .inputBox select { 
+    width: 100%; 
+    border: 1px solid #ccc; 
+    padding: 10px 15px; 
+    font-size: 15px; 
+} 
+  
+.col .inputBox input:focus, 
+.col .inputBox select:focus { 
+    border: 1px solid #000; 
+} 
+  
+.col .flex { 
+    display: flex; 
+    gap: 15px; 
+} 
+  
+.col .flex .inputBox { 
+    flex: 1 1; 
+    margin-top: 5px; 
+} 
+  
+.col .inputBox img { 
+    height: 34px; 
+    margin-top: 5px; 
+    filter: drop-shadow(0 0 1px #000); 
+} 
+  
+.container form .submit_btn { 
+    width: 100%; 
+    padding: 12px; 
+    font-size: 17px; 
+    background: rgb(1, 143, 34); 
+    color: #fff; 
+    margin-top: 5px; 
+    cursor: pointer; 
+    letter-spacing: 1px; 
+} 
+  
+.container form .submit_btn:hover { 
+    background: #3d17fb; 
+} 
+  
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button { 
+    display: none; 
+}     
+
+@media(max-width:640px;){
+#navbar nav a{
+    font-size:1em
+    height:30px;
+}
+    #navbar{
+    height:30px;
+    }
+    .row{
+        flex-direction:column;
+    }
+}
+
+#inputBox img{
+    height:200px;
+}
